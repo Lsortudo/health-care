@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/principal.css">
+    <link rel="stylesheet" href="/css/dycalendar.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Registros alimentares</title>
+</head>
+
+<body>
+    <header>
+        <div class="icon-home">
+            <img src="/assets/images/home 1.png" alt="">
+        </div>
+        <div class="user">
+            <div class="user-img-wrapper">
+                <img src="/assets/images/masc 1.png" alt="">
+            </div>
+            <div class="user-details">
+                <h6>Thiago Ferreira dos Santos</h6>
+                <p>28 anos, 11 meses</p>
+                <i class="fas fa-pen"></i>
+            </div>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li class="nav-menu-link">
+                    <i class="fas fa-bars"></i>
+                    <a href="">Todas as funcionalidades</a>
+                </li>
+                <li class="nav-menu-link">
+                    <i class="fas fa-book-medical"></i>
+                    <a href="">Anotaçoes</a>
+                </li>
+                <li class="nav-menu-link">
+                    <i class="fas fa-user-alt"></i>
+                    <a href="">Dados do paciente</a>
+                </li>
+                <li class="nav-menu-link">
+                    <i class="fas fa-flag"></i>
+                    <a href="">Finalizar a consulta</a>
+                </li>
+            </ul>
+            <!-- <ul>
+                <li class="nav-menu-link">
+                    <a href="#">
+                        <i class="fas fa-bars">Todas as funcionalidades</i>
+                    </a>
+                </li>
+                <li class="nav-menu-link">
+                    <a href="#">
+                        <i class="fas fa-book-medical">Anotaçoes</i>
+                    </a>
+                </li>
+                <li class="nav-menu-link">
+                    <a href="#">
+                        <i class="fas fa-user-alt">Dados do paciente</i>
+                    </a>
+                </li>
+                <li class="nav-menu-link">
+                    <a href="#">
+                        <i class="fas fa-flag">Finalizar a consulta</i>
+                    </a>
+                </li>
+            </ul> -->
+        </nav>
+    </header>
+    <section id="main">
+        <div class="box-calendar">
+            <div class="container-calendar">
+                <div id="dycalendar">
+
+                </div>
+            </div>
+        </div>
+        <div class="main-card">
+            <div class="main-card-header">
+                <div class="main-card-header-title">
+                    <p>Café da manha e pós-treino</p>
+                    <p>16/08/2021 08:28</p>
+                </div>
+                <div class="main-card-header-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis velit recusandae adipisci
+                        eligendi ad ut provident quis ratione, fuga quas et quam vero repudiandae ab repellat at,
+                        placeat incidunt id? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="main-card-img-wrapper">
+                <div class="main-card-icon-wrapper">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                <img src="/assets/images/sanduiche-natural-para-vender-10-receitas-faceis 2.png" alt="">
+            </div>
+            <div class="main-card-footer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur enim temporibus at reiciendis
+                    minima, dolores dignissimos sint autem possimus natus. Perferendis commodi adipisci dolore
+                    repudiandae omnis aspernatur, aliquid provident autem. Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit.</p>
+                <i class="fab fa-telegram"></i>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/dycalendar.js"></script>
+<script>
+    dycalendar.draw({
+        target: '#dycalendar',
+        type: 'month',
+        dayformat: 'full',
+        monthformat: 'full',
+        highlighttargetdate: true,
+        prevnextbutton: 'show'
+    })
+</script>
+
+</html>

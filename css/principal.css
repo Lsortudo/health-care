@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    background: #F0F2F5;
+    /* position: relative; */
+    /* width: 1440px; */
+    width: 100%;
+    height: 100%;
+}
+ul {
+    list-style-type: none;
+}
+h6, p {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFFFFF;
+}
+.icon-home {
+    position: absolute;
+    width: 60px;
+    height: 55px;
+    left: 10px;
+    top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-home img {
+    cursor: pointer;
+}
+.user {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.77);
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+.user-img-wrapper {
+
+}
+.user-details {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-details h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    padding-right: 1rem;
+}
+.user-details p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    padding-right: 0.5rem;
+}
+.fa-pen {
+    color: #47C98E;
+    font-size: 12px;
+}
+#nav-menu {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+#nav-menu ul {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-menu-link {
+    margin-top: 0.75rem;
+    cursor: pointer;
+}
+.nav-menu-link a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19.5px;
+    font-weight: 600;
+    color: #777777;
+}
+.nav-menu-link:nth-child(1) i {
+    background: #4ECB71;
+    color: white;
+    margin-left: 2rem;
+}
+.nav-menu-link:nth-child(2) i {
+    color: #E4A951;
+}
+.nav-menu-link:nth-child(3) i {
+    color: #699BF7;
+}
+.nav-menu-link:nth-child(4) i {
+    color: #9747FF;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3rem;
+
+}
+.box-calendar {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.container-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background: white;
+    margin-left: 1.5rem;
+    /* position: relative;
+    top: 37.5px;
+    left: 75px; */
+}
+#dycalendar {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    /* font-family: 'Poppins'; */
+}
+#dycalendar table {
+    width: 100%;
+    margin-top: 0.25rem;
+    border-spacing: 6px;
+}
+#dycalendar table tr:nth-child(1) td {
+    /* background: black; bordas nos dias da semana */
+    color: gray;
+    font-weight: 600;
+    border-radius: 6px;
+}
+#dycalendar table tr:nth-child(1) td:hover {
+    color: white;
+}
+#dycalendar table td {
+    color: black;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: 'Poppins';
+}
+#dycalendar table td:hover {
+    background-color: #009688;
+    color: white;
+}
+.dycalendar-month-container .dycalendar-today-date, .dycalendar-month-container .dycalendar-target-date {
+    background-color: #009688 !important ;
+    color: white !important ;
+    border-radius: 4rem !important;
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn {
+    font-family: 'Poppins';
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn {
+    font-family: 'Poppins';
+}
+.main-card {
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    /* width: 59%;
+    height: 41%; */
+    width: 55%;
+    height: 100%;
+    margin-left: 3rem;
+}
+.main-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.main-card-header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.main-card-header-title p:first-child {
+    color: #777777;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    text-align: center;
+}
+.main-card-header-title p:last-child {
+    color: #777777;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+.main-card-header-description{
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.main-card-img-wrapper img {
+   width: 100%;
+   height: 50%;
+}
+.main-card-icon-wrapper i {
+    font-size: 40px;
+    color: #47C98E;
+    position: absolute;
+    left: 53%;
+    top: 83%;
+    cursor: pointer;
+}
+.main-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;;
+}
+.main-card-footer p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #47C98E;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    width: 78%;
+}
+.fa-telegram {
+    color: #4AD395;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem 0rem 1rem;
+    cursor: pointer;
+}
+/* .nav-menu-link:nth-child(4) {
+    position: absolute;
+    transform: translate(465%, 0px);
+} */
