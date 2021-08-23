@@ -104,6 +104,9 @@
                 <i class="fab fa-telegram"></i>
             </div>
         </div>
+        <div class="modal">
+            <img class="full-img" src="/assets/images/sanduiche-natural-para-vender-10-receitas-faceis 2.png" alt="">
+        </div>
     </section>
 </body>
 <script src="/dycalendar.js"></script>
@@ -115,6 +118,20 @@
         monthformat: 'full',
         highlighttargetdate: true,
         prevnextbutton: 'show'
+    })
+    const img = document.querySelector('.fa-search-plus')
+    const modal = document.querySelector('.modal');
+    const original = document.querySelector('.full-img')
+
+    img.addEventListener('click', () => {
+        modal.classList.add('open')
+        original.classList.add('open')
+    })
+    modal.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal')) {
+            modal.classList.remove('open');
+            original.classList.remove('open')
+        }
     })
 </script>
 
